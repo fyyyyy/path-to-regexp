@@ -1,4 +1,6 @@
-var isarray = require('isarray')
+var isarray = function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
 
 /**
  * Expose `pathToRegexp`.
